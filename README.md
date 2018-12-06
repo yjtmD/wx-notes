@@ -34,7 +34,7 @@ gitbook serve
     "github",
     "donate",
     "anchor-navigation-ex",
-    "expandable-chapters-small",
+    "expandable-menu",
     "splitter",
     "include-codeblock",
     "theme-comscore"

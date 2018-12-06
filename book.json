@@ -3,9 +3,10 @@
   "author": "yjtmD",
   "description": "前端笔记积累",
   "language": "zh-hans",
-  "gitbook": ">=3.0.0",
+  "gitbook": "3.2.3",
+  "root": ".",
   "styles": {
-    "website": "./styles/website.css"
+    "website": "styles/website.css"
   },
   "structure": {
     "readme": "README.md"
@@ -18,7 +19,7 @@
     "github",
     "donate",
     "anchor-navigation-ex",
-    "expandable-chapters-small",
+    "expandable-menu",
     "splitter",
     "include-codeblock",
     "theme-comscore"
