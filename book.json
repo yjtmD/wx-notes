@@ -18,7 +18,10 @@
     "github",
     "donate",
     "anchor-navigation-ex",
-    "toggle-chapters"
+    "expandable-chapters-small",
+    "splitter",
+    "include-codeblock",
+    "theme-comscore"
   ],
   "pluginsConfig": {
     "search-pro": {
@@ -36,13 +39,15 @@
       "wechatText": "微信捐赠"
     },
     "anchor-navigation-ex": {
-      "associatedWithSummary":false,
-      "showLevel":true,
-      "multipleH1": true,
-      "mode": "float"
+      "isRewritePageTitle": false,
+      "tocLevel1Icon": "fa fa-hand-o-right",
+      "tocLevel2Icon": "fa fa-hand-o-right",
+      "tocLevel3Icon": "fa fa-hand-o-right"
     },
-    "fontsettings": {
-      "theme": "white"
+    "include-codeblock": {
+      "template": "ace",
+      "unindent": true,
+      "edit": true
     }
   }
 }

@@ -29,7 +29,11 @@
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
                 
             
                 
@@ -38,6 +42,10 @@
             
                 
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-theme-comscore/test.css">
                 
             
         
@@ -58,6 +66,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
+    
+    <link rel="next" href="HTML/" />
     
     
 
@@ -100,21 +110,28 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" >
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="HTML/">
             
-                <span>
+                <a href="HTML/">
             
                     
                     HTML
             
-                </span>
+                </a>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="HTML/1.html">
+        <li class="chapter " data-level="2.1.1" data-path="HTML/1.html">
             
                 <a href="HTML/1.html">
             
@@ -132,21 +149,28 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" >
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="CSS/">
             
-                <span>
+                <a href="CSS/">
             
                     
                     CSS
             
-                </span>
+                </a>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="CSS/1.html">
+        <li class="chapter " data-level="3.1.1" data-path="CSS/1.html">
             
                 <a href="CSS/1.html">
             
@@ -164,21 +188,28 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" >
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="JS/">
             
-                <span>
+                <a href="JS/">
             
                     
                     JS
             
-                </span>
+                </a>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="JS/1.html">
+        <li class="chapter " data-level="4.1.1" data-path="JS/1.html">
             
                 <a href="JS/1.html">
             
@@ -196,23 +227,30 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" >
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="FRAME/">
             
-                <span>
+                <a href="FRAME/">
             
                     
                     框架
             
-                </span>
+                </a>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="Vue/1.html">
+        <li class="chapter " data-level="5.1.1" data-path="FRAME/Vue/">
             
-                <a href="Vue/1.html">
+                <a href="FRAME/Vue/">
             
                     
                     vue
@@ -285,35 +323,61 @@
 <pre><code>gitbook serve
 </code></pre></li>
 <li><h6 id="&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x65B0;&#x5EFA;bookjson"><a name="&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x65B0;&#x5EFA;bookjson" class="anchor-navigation-ex-anchor" href="#&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x65B0;&#x5EFA;bookjson"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x65B0;&#x5EFA;<code>book.json</code></h6>
-<pre><code>{
-&quot;title&quot;: &quot;&#x524D;&#x7AEF;&#x7B14;&#x8BB0;&quot;,
-&quot;author&quot;: &quot;yjtmD&quot;,
-&quot;description&quot;: &quot;&#x524D;&#x7AEF;&#x7B14;&#x8BB0;&#x79EF;&#x7D2F;&quot;,
-&quot;language&quot;: &quot;zh-hans&quot;,
-&quot;gitbook&quot;: &quot;&gt;=3.0.0&quot;,
-&quot;styles&quot;: {
- &quot;website&quot;: &quot;./styles/website.css&quot;
+<pre><code class="lang-json">{
+<span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;&#x524D;&#x7AEF;&#x7B14;&#x8BB0;&quot;</span>,
+<span class="hljs-string">&quot;author&quot;</span>: <span class="hljs-string">&quot;yjtmD&quot;</span>,
+<span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;&#x524D;&#x7AEF;&#x7B14;&#x8BB0;&#x79EF;&#x7D2F;&quot;</span>,
+<span class="hljs-string">&quot;language&quot;</span>: <span class="hljs-string">&quot;zh-hans&quot;</span>,
+<span class="hljs-string">&quot;gitbook&quot;</span>: <span class="hljs-string">&quot;&gt;=3.0.0&quot;</span>,
+<span class="hljs-string">&quot;styles&quot;</span>: {
+ <span class="hljs-string">&quot;website&quot;</span>: <span class="hljs-string">&quot;./styles/website.css&quot;</span>
 },
-&quot;structure&quot;: {
- &quot;readme&quot;: &quot;README.md&quot;
+<span class="hljs-string">&quot;structure&quot;</span>: {
+ <span class="hljs-string">&quot;readme&quot;</span>: <span class="hljs-string">&quot;README.md&quot;</span>
 },
-&quot;links&quot;: {
+<span class="hljs-string">&quot;links&quot;</span>: {
 },
-&quot;plugins&quot;: [
- &quot;-search&quot;,
- &quot;search-pro&quot;,
- &quot;github&quot;
+<span class="hljs-string">&quot;plugins&quot;</span>: [
+ <span class="hljs-string">&quot;-search&quot;</span>,
+ <span class="hljs-string">&quot;search-pro&quot;</span>,
+ <span class="hljs-string">&quot;github&quot;</span>,
+ <span class="hljs-string">&quot;donate&quot;</span>,
+ <span class="hljs-string">&quot;anchor-navigation-ex&quot;</span>,
+ <span class="hljs-string">&quot;expandable-chapters-small&quot;</span>,
+ <span class="hljs-string">&quot;splitter&quot;</span>,
+ <span class="hljs-string">&quot;include-codeblock&quot;</span>,
+ <span class="hljs-string">&quot;theme-comscore&quot;</span>
 ],
-&quot;pluginsConfig&quot;: {
- &quot;search-pro&quot;: {
-   &quot;cutWordLib&quot;: &quot;nodejieba&quot;
+<span class="hljs-string">&quot;pluginsConfig&quot;</span>: {
+ <span class="hljs-string">&quot;search-pro&quot;</span>: {
+   <span class="hljs-string">&quot;cutWordLib&quot;</span>: <span class="hljs-string">&quot;nodejieba&quot;</span>
  },
- &quot;github&quot;: {
-   &quot;url&quot;: &quot;https://github.com/yjtmD/wx-notes&quot;
+ <span class="hljs-string">&quot;github&quot;</span>: {
+   <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;https://github.com/yjtmD/wx-notes&quot;</span>
+ },
+ <span class="hljs-string">&quot;donate&quot;</span>: {
+   <span class="hljs-string">&quot;wechat&quot;</span>: <span class="hljs-string">&quot;http://www.wxylx.top/images/wechat.jpg&quot;</span>,
+   <span class="hljs-string">&quot;alipay&quot;</span>: <span class="hljs-string">&quot;http://www.wxylx.top/images/alipay.jpg&quot;</span>,
+   <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+   <span class="hljs-string">&quot;button&quot;</span>: <span class="hljs-string">&quot;&#x6253;&#x8D4F;&quot;</span>,
+   <span class="hljs-string">&quot;alipayText&quot;</span>: <span class="hljs-string">&quot;&#x652F;&#x4ED8;&#x5B9D;&#x6350;&#x8D60;&quot;</span>,
+   <span class="hljs-string">&quot;wechatText&quot;</span>: <span class="hljs-string">&quot;&#x5FAE;&#x4FE1;&#x6350;&#x8D60;&quot;</span>
+ },
+ <span class="hljs-string">&quot;anchor-navigation-ex&quot;</span>: {
+   <span class="hljs-string">&quot;isRewritePageTitle&quot;</span>: <span class="hljs-literal">false</span>,
+   <span class="hljs-string">&quot;tocLevel1Icon&quot;</span>: <span class="hljs-string">&quot;fa fa-hand-o-right&quot;</span>,
+   <span class="hljs-string">&quot;tocLevel2Icon&quot;</span>: <span class="hljs-string">&quot;fa fa-hand-o-right&quot;</span>,
+   <span class="hljs-string">&quot;tocLevel3Icon&quot;</span>: <span class="hljs-string">&quot;fa fa-hand-o-right&quot;</span>
+ },
+ <span class="hljs-string">&quot;include-codeblock&quot;</span>: {
+   <span class="hljs-string">&quot;template&quot;</span>: <span class="hljs-string">&quot;ace&quot;</span>,
+   <span class="hljs-string">&quot;unindent&quot;</span>: <span class="hljs-literal">true</span>,
+   <span class="hljs-string">&quot;edit&quot;</span>: <span class="hljs-literal">true</span>
  }
 }
 }
-</code></pre></li>
+</code></pre>
+</li>
 <li><h6 id="&#x5B89;&#x88C5;&#x63D2;&#x4EF6;"><a name="&#x5B89;&#x88C5;&#x63D2;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88C5;&#x63D2;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88C5;&#x63D2;&#x4EF6;</h6>
 <pre><code>gitbook install
 </code></pre></li>
@@ -356,6 +420,10 @@
             
                 
                 
+                <a href="HTML/" class="navigation navigation-next navigation-unique" aria-label="Next page: HTML">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
             
         
     </div>
@@ -363,7 +431,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"首页","level":"1.1","depth":1,"next":{"title":"HTML","level":"1.2","depth":1,"ref":"","articles":[{"title":"demo","level":"1.2.1","depth":2,"path":"HTML/1.md","ref":"HTML/1.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-search","search-pro","github","donate","anchor-navigation-ex","toggle-chapters"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/yjtmD/wx-notes"},"search-pro":{"cutWordLib":"nodejieba"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"http://www.wxylx.top/images/alipay.jpg","alipayText":"支付宝捐赠","button":"打赏","title":"","wechat":"http://www.wxylx.top/images/wechat.jpg","wechatText":"微信捐赠"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","author":"yjtmD","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"前端笔记","language":"zh-hans","links":{},"gitbook":">=3.0.0","description":"前端笔记积累"},"file":{"path":"README.md","mtime":"2018-12-06T09:54:21.541Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-06T10:36:04.826Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"首页","level":"1.1","depth":1,"next":{"title":"HTML","level":"2.1","depth":1,"path":"HTML/index.md","ref":"HTML/index.md","articles":[{"title":"demo","level":"2.1.1","depth":2,"path":"HTML/1.md","ref":"HTML/1.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-search","search-pro","github","donate","anchor-navigation-ex","expandable-chapters-small","splitter","include-codeblock","theme-comscore","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/yjtmD/wx-notes"},"livereload":{},"splitter":{},"search-pro":{"cutWordLib":"nodejieba"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"http://www.wxylx.top/images/alipay.jpg","alipayText":"支付宝捐赠","button":"打赏","title":"","wechat":"http://www.wxylx.top/images/wechat.jpg","wechatText":"微信捐赠"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"isRewritePageTitle":false,"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"theme-comscore":{},"expandable-chapters-small":{},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"yjtmD","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"前端笔记","language":"zh-hans","links":{},"gitbook":">=3.0.0","description":"前端笔记积累"},"file":{"path":"README.md","mtime":"2018-12-06T15:24:37.446Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-06T15:22:28.504Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -389,7 +457,15 @@
         
     
         
-        <script src="gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        <script src="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
@@ -406,6 +482,10 @@
     
         
         <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-theme-comscore/test.js"></script>
         
     
 

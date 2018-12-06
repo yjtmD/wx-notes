@@ -13,7 +13,7 @@ gitbook init
 gitbook serve
 ```
 *  ###### 根目录下新建`book.json`
-```
+```json
 {
   "title": "前端笔记",
   "author": "yjtmD",
@@ -31,7 +31,13 @@ gitbook serve
   "plugins": [
     "-search",
     "search-pro",
-    "github"
+    "github",
+    "donate",
+    "anchor-navigation-ex",
+    "expandable-chapters-small",
+    "splitter",
+    "include-codeblock",
+    "theme-comscore"
   ],
   "pluginsConfig": {
     "search-pro": {
@@ -39,6 +45,25 @@ gitbook serve
     },
     "github": {
       "url": "https://github.com/yjtmD/wx-notes"
+    },
+    "donate": {
+      "wechat": "http://www.wxylx.top/images/wechat.jpg",
+      "alipay": "http://www.wxylx.top/images/alipay.jpg",
+      "title": "",
+      "button": "打赏",
+      "alipayText": "支付宝捐赠",
+      "wechatText": "微信捐赠"
+    },
+    "anchor-navigation-ex": {
+      "isRewritePageTitle": false,
+      "tocLevel1Icon": "fa fa-hand-o-right",
+      "tocLevel2Icon": "fa fa-hand-o-right",
+      "tocLevel3Icon": "fa fa-hand-o-right"
+    },
+    "include-codeblock": {
+      "template": "ace",
+      "unindent": true,
+      "edit": true
     }
   }
 }
