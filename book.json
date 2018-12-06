@@ -1,0 +1,48 @@
+{
+  "title": "前端笔记",
+  "author": "yjtmD",
+  "description": "前端笔记积累",
+  "language": "zh-hans",
+  "gitbook": ">=3.0.0",
+  "styles": {
+    "website": "./styles/website.css"
+  },
+  "structure": {
+    "readme": "README.md"
+  },
+  "links": {
+  },
+  "plugins": [
+    "-search",
+    "search-pro",
+    "github",
+    "donate",
+    "anchor-navigation-ex",
+    "toggle-chapters"
+  ],
+  "pluginsConfig": {
+    "search-pro": {
+      "cutWordLib": "nodejieba"
+    },
+    "github": {
+      "url": "https://github.com/yjtmD/wx-notes"
+    },
+    "donate": {
+      "wechat": "http://www.wxylx.top/images/wechat.jpg",
+      "alipay": "http://www.wxylx.top/images/alipay.jpg",
+      "title": "",
+      "button": "打赏",
+      "alipayText": "支付宝捐赠",
+      "wechatText": "微信捐赠"
+    },
+    "anchor-navigation-ex": {
+      "associatedWithSummary":false,
+      "showLevel":true,
+      "multipleH1": true,
+      "mode": "float"
+    },
+    "fontsettings": {
+      "theme": "white"
+    }
+  }
+}
