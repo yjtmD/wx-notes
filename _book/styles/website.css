@@ -2,3 +2,6 @@
     text-decoration: none;
     color: #008cff;
 }
+.page-footer .copyright {
+     display: none;
+ }

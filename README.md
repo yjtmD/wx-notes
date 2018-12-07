@@ -19,29 +19,39 @@ gitbook serve
   "author": "yjtmD",
   "description": "前端笔记积累",
   "language": "zh-hans",
-  "gitbook": ">=3.0.0",
+  "output.name": "site",
+  "gitbook": "3.2.3",
+  "root": ".",
   "styles": {
-    "website": "./styles/website.css"
-  },
-  "structure": {
-    "readme": "README.md"
+    "website": "styles/website.css"
   },
   "links": {
   },
   "plugins": [
+    "-lunr",
     "-search",
-    "search-pro",
+    "-highlight",
+    "search-plus",
+    "simple-page-toc",
+    "prism",
+    "prism-themes",
     "github",
     "donate",
     "anchor-navigation-ex",
     "expandable-menu",
     "splitter",
     "include-codeblock",
-    "theme-comscore"
+    "tbfed-pagefooter"
   ],
   "pluginsConfig": {
-    "search-pro": {
-      "cutWordLib": "nodejieba"
+    "simple-page-toc": {
+      "maxDepth": 3,
+      "skipFirstH1": true
+    },
+    "prism": {
+      "css": [
+        "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
+      ]
     },
     "github": {
       "url": "https://github.com/yjtmD/wx-notes"
@@ -64,6 +74,10 @@ gitbook serve
       "template": "ace",
       "unindent": true,
       "edit": true
+    },
+    "tbfed-pagefooter": {
+      "modify_label": "该文件修订时间：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
     }
   }
 }
