@@ -17,7 +17,11 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
                 
             
                 
@@ -37,15 +41,11 @@
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
                 
             
                 
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-theme-comscore/test.css">
                 
             
         
@@ -308,7 +308,7 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
-<div id="book-search-results">
+<div class="search-plus" id="book-search-results">
     <div class="search-noresults">
     
                                 <section class="normal markdown-section">
@@ -316,85 +316,101 @@
                                 <h3 id="&#x57FA;&#x4E8E;gitbook&#x7684;&#x535A;&#x5BA2;&#x642D;&#x5EFA;"><a name="&#x57FA;&#x4E8E;gitbook&#x7684;&#x535A;&#x5BA2;&#x642D;&#x5EFA;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x4E8E;gitbook&#x7684;&#x535A;&#x5BA2;&#x642D;&#x5EFA;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x4E8E;GitBook&#x7684;&#x535A;&#x5BA2;&#x642D;&#x5EFA;</h3>
 <ul>
 <li><h6 id="&#x901A;&#x8FC7;npm&#x5B89;&#x88C5;gitbook"><a name="&#x901A;&#x8FC7;npm&#x5B89;&#x88C5;gitbook" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x8FC7;npm&#x5B89;&#x88C5;gitbook"><i class="fa fa-link" aria-hidden="true"></i></a>&#x901A;&#x8FC7;NPM&#x5B89;&#x88C5;gitbook</h6>
-<pre><code>npm install gitbook-cli -g
+<pre class="language-"><code>npm install gitbook-cli -g
 </code></pre></li>
 <li><h6 id="&#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;&#x65B0;&#x5EFA;&#x6587;&#x4EF6;"><a name="&#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;&#x65B0;&#x5EFA;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;&#x65B0;&#x5EFA;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;(&#x65B0;&#x5EFA;&#x6587;&#x4EF6;)</h6>
-<pre><code>gitbook init
+<pre class="language-"><code>gitbook init
 </code></pre></li>
 <li><h6 id="&#x542F;&#x52A8;&#x670D;&#x52A1;httplocalhost4000"><a name="&#x542F;&#x52A8;&#x670D;&#x52A1;httplocalhost4000" class="anchor-navigation-ex-anchor" href="#&#x542F;&#x52A8;&#x670D;&#x52A1;httplocalhost4000"><i class="fa fa-link" aria-hidden="true"></i></a>&#x542F;&#x52A8;&#x670D;&#x52A1;(<a href="http://localhost:4000/" target="_blank">http://localhost:4000/</a>)</h6>
-<pre><code>gitbook serve
+<pre class="language-"><code>gitbook serve
 </code></pre></li>
 <li><h6 id="&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x65B0;&#x5EFA;bookjson"><a name="&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x65B0;&#x5EFA;bookjson" class="anchor-navigation-ex-anchor" href="#&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x65B0;&#x5EFA;bookjson"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x65B0;&#x5EFA;<code>book.json</code></h6>
-<pre><code class="lang-json">{
-<span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;&#x524D;&#x7AEF;&#x7B14;&#x8BB0;&quot;</span>,
-<span class="hljs-string">&quot;author&quot;</span>: <span class="hljs-string">&quot;yjtmD&quot;</span>,
-<span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;&#x524D;&#x7AEF;&#x7B14;&#x8BB0;&#x79EF;&#x7D2F;&quot;</span>,
-<span class="hljs-string">&quot;language&quot;</span>: <span class="hljs-string">&quot;zh-hans&quot;</span>,
-<span class="hljs-string">&quot;gitbook&quot;</span>: <span class="hljs-string">&quot;&gt;=3.0.0&quot;</span>,
-<span class="hljs-string">&quot;styles&quot;</span>: {
- <span class="hljs-string">&quot;website&quot;</span>: <span class="hljs-string">&quot;./styles/website.css&quot;</span>
-},
-<span class="hljs-string">&quot;structure&quot;</span>: {
- <span class="hljs-string">&quot;readme&quot;</span>: <span class="hljs-string">&quot;README.md&quot;</span>
-},
-<span class="hljs-string">&quot;links&quot;</span>: {
-},
-<span class="hljs-string">&quot;plugins&quot;</span>: [
- <span class="hljs-string">&quot;-search&quot;</span>,
- <span class="hljs-string">&quot;search-pro&quot;</span>,
- <span class="hljs-string">&quot;github&quot;</span>,
- <span class="hljs-string">&quot;donate&quot;</span>,
- <span class="hljs-string">&quot;anchor-navigation-ex&quot;</span>,
- <span class="hljs-string">&quot;expandable-menu&quot;</span>,
- <span class="hljs-string">&quot;splitter&quot;</span>,
- <span class="hljs-string">&quot;include-codeblock&quot;</span>,
- <span class="hljs-string">&quot;theme-comscore&quot;</span>
-],
-<span class="hljs-string">&quot;pluginsConfig&quot;</span>: {
- <span class="hljs-string">&quot;search-pro&quot;</span>: {
-   <span class="hljs-string">&quot;cutWordLib&quot;</span>: <span class="hljs-string">&quot;nodejieba&quot;</span>
- },
- <span class="hljs-string">&quot;github&quot;</span>: {
-   <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;https://github.com/yjtmD/wx-notes&quot;</span>
- },
- <span class="hljs-string">&quot;donate&quot;</span>: {
-   <span class="hljs-string">&quot;wechat&quot;</span>: <span class="hljs-string">&quot;http://www.wxylx.top/images/wechat.jpg&quot;</span>,
-   <span class="hljs-string">&quot;alipay&quot;</span>: <span class="hljs-string">&quot;http://www.wxylx.top/images/alipay.jpg&quot;</span>,
-   <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
-   <span class="hljs-string">&quot;button&quot;</span>: <span class="hljs-string">&quot;&#x6253;&#x8D4F;&quot;</span>,
-   <span class="hljs-string">&quot;alipayText&quot;</span>: <span class="hljs-string">&quot;&#x652F;&#x4ED8;&#x5B9D;&#x6350;&#x8D60;&quot;</span>,
-   <span class="hljs-string">&quot;wechatText&quot;</span>: <span class="hljs-string">&quot;&#x5FAE;&#x4FE1;&#x6350;&#x8D60;&quot;</span>
- },
- <span class="hljs-string">&quot;anchor-navigation-ex&quot;</span>: {
-   <span class="hljs-string">&quot;isRewritePageTitle&quot;</span>: <span class="hljs-literal">false</span>,
-   <span class="hljs-string">&quot;tocLevel1Icon&quot;</span>: <span class="hljs-string">&quot;fa fa-hand-o-right&quot;</span>,
-   <span class="hljs-string">&quot;tocLevel2Icon&quot;</span>: <span class="hljs-string">&quot;fa fa-hand-o-right&quot;</span>,
-   <span class="hljs-string">&quot;tocLevel3Icon&quot;</span>: <span class="hljs-string">&quot;fa fa-hand-o-right&quot;</span>
- },
- <span class="hljs-string">&quot;include-codeblock&quot;</span>: {
-   <span class="hljs-string">&quot;template&quot;</span>: <span class="hljs-string">&quot;ace&quot;</span>,
-   <span class="hljs-string">&quot;unindent&quot;</span>: <span class="hljs-literal">true</span>,
-   <span class="hljs-string">&quot;edit&quot;</span>: <span class="hljs-literal">true</span>
- }
-}
-}
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+<span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x524D;&#x7AEF;&#x7B14;&#x8BB0;&quot;</span><span class="token punctuation">,</span>
+<span class="token property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;yjtmD&quot;</span><span class="token punctuation">,</span>
+<span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x524D;&#x7AEF;&#x7B14;&#x8BB0;&#x79EF;&#x7D2F;&quot;</span><span class="token punctuation">,</span>
+<span class="token property">&quot;language&quot;</span><span class="token operator">:</span> <span class="token string">&quot;zh-hans&quot;</span><span class="token punctuation">,</span>
+<span class="token property">&quot;output.name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;site&quot;</span><span class="token punctuation">,</span>
+<span class="token property">&quot;gitbook&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3.2.3&quot;</span><span class="token punctuation">,</span>
+<span class="token property">&quot;root&quot;</span><span class="token operator">:</span> <span class="token string">&quot;.&quot;</span><span class="token punctuation">,</span>
+<span class="token property">&quot;styles&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+ <span class="token property">&quot;website&quot;</span><span class="token operator">:</span> <span class="token string">&quot;styles/website.css&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token property">&quot;links&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token property">&quot;plugins&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+ <span class="token string">&quot;-lunr&quot;</span><span class="token punctuation">,</span>
+ <span class="token string">&quot;-search&quot;</span><span class="token punctuation">,</span>
+ <span class="token string">&quot;-highlight&quot;</span><span class="token punctuation">,</span>
+ <span class="token string">&quot;search-plus&quot;</span><span class="token punctuation">,</span>
+ <span class="token string">&quot;simple-page-toc&quot;</span><span class="token punctuation">,</span>
+ <span class="token string">&quot;prism&quot;</span><span class="token punctuation">,</span>
+ <span class="token string">&quot;prism-themes&quot;</span><span class="token punctuation">,</span>
+ <span class="token string">&quot;github&quot;</span><span class="token punctuation">,</span>
+ <span class="token string">&quot;donate&quot;</span><span class="token punctuation">,</span>
+ <span class="token string">&quot;anchor-navigation-ex&quot;</span><span class="token punctuation">,</span>
+ <span class="token string">&quot;expandable-menu&quot;</span><span class="token punctuation">,</span>
+ <span class="token string">&quot;splitter&quot;</span><span class="token punctuation">,</span>
+ <span class="token string">&quot;include-codeblock&quot;</span><span class="token punctuation">,</span>
+ <span class="token string">&quot;tbfed-pagefooter&quot;</span>
+<span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token property">&quot;pluginsConfig&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+ <span class="token property">&quot;simple-page-toc&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+   <span class="token property">&quot;maxDepth&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+   <span class="token property">&quot;skipFirstH1&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+ <span class="token punctuation">}</span><span class="token punctuation">,</span>
+ <span class="token property">&quot;prism&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+   <span class="token property">&quot;css&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+     <span class="token string">&quot;prism-themes/themes/prism-base16-ateliersulphurpool.light.css&quot;</span>
+   <span class="token punctuation">]</span>
+ <span class="token punctuation">}</span><span class="token punctuation">,</span>
+ <span class="token property">&quot;github&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+   <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://github.com/yjtmD/wx-notes&quot;</span>
+ <span class="token punctuation">}</span><span class="token punctuation">,</span>
+ <span class="token property">&quot;donate&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+   <span class="token property">&quot;wechat&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://www.wxylx.top/images/wechat.jpg&quot;</span><span class="token punctuation">,</span>
+   <span class="token property">&quot;alipay&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://www.wxylx.top/images/alipay.jpg&quot;</span><span class="token punctuation">,</span>
+   <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+   <span class="token property">&quot;button&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x6253;&#x8D4F;&quot;</span><span class="token punctuation">,</span>
+   <span class="token property">&quot;alipayText&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x652F;&#x4ED8;&#x5B9D;&#x6350;&#x8D60;&quot;</span><span class="token punctuation">,</span>
+   <span class="token property">&quot;wechatText&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x5FAE;&#x4FE1;&#x6350;&#x8D60;&quot;</span>
+ <span class="token punctuation">}</span><span class="token punctuation">,</span>
+ <span class="token property">&quot;anchor-navigation-ex&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+   <span class="token property">&quot;isRewritePageTitle&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+   <span class="token property">&quot;tocLevel1Icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fa fa-hand-o-right&quot;</span><span class="token punctuation">,</span>
+   <span class="token property">&quot;tocLevel2Icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fa fa-hand-o-right&quot;</span><span class="token punctuation">,</span>
+   <span class="token property">&quot;tocLevel3Icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fa fa-hand-o-right&quot;</span>
+ <span class="token punctuation">}</span><span class="token punctuation">,</span>
+ <span class="token property">&quot;include-codeblock&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+   <span class="token property">&quot;template&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ace&quot;</span><span class="token punctuation">,</span>
+   <span class="token property">&quot;unindent&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+   <span class="token property">&quot;edit&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+ <span class="token punctuation">}</span><span class="token punctuation">,</span>
+ <span class="token property">&quot;tbfed-pagefooter&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+   <span class="token property">&quot;modify_label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;&quot;</span><span class="token punctuation">,</span>
+   <span class="token property">&quot;modify_format&quot;</span><span class="token operator">:</span> <span class="token string">&quot;YYYY-MM-DD HH:mm:ss&quot;</span>
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 </li>
 <li><h6 id="&#x5B89;&#x88C5;&#x63D2;&#x4EF6;"><a name="&#x5B89;&#x88C5;&#x63D2;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88C5;&#x63D2;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88C5;&#x63D2;&#x4EF6;</h6>
-<pre><code>gitbook install
+<pre class="language-"><code>gitbook install
 </code></pre></li>
 <li><h6 id="&#x5173;&#x8054;git&#x4ED3;&#x5E93;"><a name="&#x5173;&#x8054;git&#x4ED3;&#x5E93;" class="anchor-navigation-ex-anchor" href="#&#x5173;&#x8054;git&#x4ED3;&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5173;&#x8054;git&#x4ED3;&#x5E93;</h6>
 </li>
 <li><h6 id="&#x5168;&#x5C40;&#x5B89;&#x88C5;gh-pages&#x5DE5;&#x5177;"><a name="&#x5168;&#x5C40;&#x5B89;&#x88C5;gh-pages&#x5DE5;&#x5177;" class="anchor-navigation-ex-anchor" href="#&#x5168;&#x5C40;&#x5B89;&#x88C5;gh-pages&#x5DE5;&#x5177;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5168;&#x5C40;&#x5B89;&#x88C5;<code>gh-pages</code>&#x5DE5;&#x5177;</h6>
-<pre><code>npm install gh-pages -g
+<pre class="language-"><code>npm install gh-pages -g
 </code></pre></li>
 <li><h6 id="book&#x90E8;&#x7F72;&#x5230;&#x5206;&#x652F;"><a name="book&#x90E8;&#x7F72;&#x5230;&#x5206;&#x652F;" class="anchor-navigation-ex-anchor" href="#book&#x90E8;&#x7F72;&#x5230;&#x5206;&#x652F;"><i class="fa fa-link" aria-hidden="true"></i></a>_book&#x90E8;&#x7F72;&#x5230;&#x5206;&#x652F;</h6>
-<pre><code>gh-pages -d _book
+<pre class="language-"><code>gh-pages -d _book
 </code></pre></li>
 <li><h6 id="&#x5173;&#x8054;&#x57DF;&#x540D;&#xFF0C;&#x6DFB;&#x52A0;cnname&#x6587;&#x4EF6;"><a name="&#x5173;&#x8054;&#x57DF;&#x540D;&#xFF0C;&#x6DFB;&#x52A0;cnname&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x5173;&#x8054;&#x57DF;&#x540D;&#xFF0C;&#x6DFB;&#x52A0;cnname&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5173;&#x8054;&#x57DF;&#x540D;&#xFF0C;&#x6DFB;&#x52A0;<code>CNNAME</code>&#x6587;&#x4EF6;</h6>
 </li>
 </ul>
-
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-12-07 10:55:58
+</span></footer>
                                 
                                 </section>
                             
@@ -433,7 +449,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"首页","level":"1.1","depth":1,"next":{"title":"HTML","level":"2.1","depth":1,"path":"HTML/index.md","ref":"HTML/index.md","articles":[{"title":"demo","level":"2.1.1","depth":2,"path":"HTML/1.md","ref":"HTML/1.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-search","search-pro","github","donate","anchor-navigation-ex","expandable-menu","splitter","include-codeblock","theme-comscore","livereload"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/yjtmD/wx-notes"},"livereload":{},"splitter":{},"search-pro":{"cutWordLib":"nodejieba"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"http://www.wxylx.top/images/alipay.jpg","alipayText":"支付宝捐赠","button":"打赏","title":"","wechat":"http://www.wxylx.top/images/wechat.jpg","wechatText":"微信捐赠"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"isRewritePageTitle":false,"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"theme-comscore":{},"expandable-menu":{},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"yjtmD","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"前端笔记","language":"zh-hans","links":{},"gitbook":"3.2.3","description":"前端笔记积累"},"file":{"path":"README.md","mtime":"2018-12-06T15:35:05.413Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-06T16:06:44.519Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"首页","level":"1.1","depth":1,"next":{"title":"HTML","level":"2.1","depth":1,"path":"HTML/index.md","ref":"HTML/index.md","articles":[{"title":"demo","level":"2.1.1","depth":2,"path":"HTML/1.md","ref":"HTML/1.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","search-plus","simple-page-toc","prism","prism-themes","github","donate","anchor-navigation-ex","expandable-menu","splitter","include-codeblock","tbfed-pagefooter"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"github":{"url":"https://github.com/yjtmD/wx-notes"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"splitter":{},"donate":{"alipay":"http://www.wxylx.top/images/alipay.jpg","alipayText":"支付宝捐赠","button":"打赏","title":"","wechat":"http://www.wxylx.top/images/wechat.jpg","wechatText":"微信捐赠"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"isRewritePageTitle":false,"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"prism-themes":{},"expandable-menu":{},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"yjtmD","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"前端笔记","language":"zh-hans","output.name":"site","links":{},"gitbook":"3.2.3","description":"前端笔记积累"},"file":{"path":"README.md","mtime":"2018-12-07T02:55:58.969Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-07T02:57:37.683Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -443,11 +459,11 @@
     <script src="gitbook/theme.js"></script>
     
         
-        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
         
     
         
@@ -467,27 +483,11 @@
         
     
         
-        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
         <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
         
     
         
         <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-theme-comscore/test.js"></script>
         
     
 
