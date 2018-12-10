@@ -3,18 +3,18 @@
 * [首页](README.md)
 
 -----
-* [HTML](HTML/index.md)
+* HTML
     * [demo](HTML/1.md)
 
 -----
-* [CSS](CSS/index.md)
+* CSS
     * [demo](CSS/1.md)
 
 -----
-* [JS](JS/index.md)
-    * [demo](JS/1.md)
+* JS
+    * [数据类型](JS/数据类型.md)
 
 -----
-* [框架](FRAME/index.md)
+* 框架
     * [vue](FRAME/Vue/index.md)
 
