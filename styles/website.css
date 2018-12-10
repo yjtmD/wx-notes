@@ -5,3 +5,11 @@
 .page-footer .copyright {
      display: none;
  }
+
+.markdown-section code {
+    color: #c7254e;
+}
+
+.markdown-section pre>code {
+    color: inherit;
+}
