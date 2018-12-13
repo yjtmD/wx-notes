@@ -28,9 +28,14 @@
     "tbfed-pagefooter"
   ],
   "pluginsConfig": {
+    "fontsettings": {
+      "theme": "white",
+      "family": "sans",
+      "size": 1
+    },
     "simple-page-toc": {
       "maxDepth": 3,
-      "skipFirstH1": true
+      "skipFirstH1": false
     },
     "prism": {
       "css": [
@@ -56,7 +61,7 @@
     },
     "include-codeblock": {
       "template": "ace",
-      "unindent": true,
+      "unindent": false,
       "edit": true
     },
     "tbfed-pagefooter": {

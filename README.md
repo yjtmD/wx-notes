@@ -1,18 +1,19 @@
-### 基于GitBook的博客搭建
+# 基于GitBook的博客搭建
 
-*  ###### 通过NPM安装gitbook
+## 通过NPM安装gitbook
 ```
 npm install gitbook-cli -g
 ```
-*  ###### 初始化项目(新建文件)
+## 初始化项目(新建文件)
 ```
 gitbook init
 ```
-*  ###### 启动服务(http://localhost:4000/)
+## 启动服务
 ```
 gitbook serve
+// serve on http://localhost:4000/
 ```
-*  ###### 根目录下新建`book.json`
+## 根目录下新建`book.json`
 ```json
 {
   "title": "前端笔记",
@@ -82,17 +83,17 @@ gitbook serve
   }
 }
 ```
-*  ###### 安装插件
+## 安装插件
 ```
 gitbook install
 ```
-*  ###### 关联git仓库
-*  ###### 全局安装`gh-pages`工具
+## 关联git仓库
+## 全局安装`gh-pages`工具
 ```
 npm install gh-pages -g
 ```
-*  ###### _book部署到分支
+## _book部署到分支
 ```
 gh-pages -d _book
 ```
-*  ###### 关联域名，添加`CNNAME`文件
+## 关联域名,添加`CNNAME`文件
